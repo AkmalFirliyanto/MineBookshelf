@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MineBookShelf</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="navbar">BOOKSHELF</header>
+        <div class="image">
+            <img src="assets/books.png" alt="Tumpukan Buku">
+        </div>
+        <main id="books">
+            <section class="input_section">
+                <h2>Masukkan Buku Baru</h2>
+                <form id="inputBook">
+                    <div class="input-group">
+                        <label for="title">Judul</label>
+                        <input id="title" type="text" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="author">Penulis</label>
+                        <input id="author" type="text" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="year">Tahun</label>
+                        <input id="year" type="number" required>
+                    </div>
+                    <div class="input_inline">
+                        <label for="isComplete">Selesai dibaca</label>
+                        <input id="isComplete" type="checkbox">
+                    </div>
+                    <input type="submit" value="Tambah Buku" class="book_submit">
+                </form>
+            </section>
+        </main>
+        <section class="search">
+            <form id="searchBook">
+                <input id="cari-buku" type="text" placeholder="Cari Buku">
+            </form>
+        </section>
+        <section class="book_shelf">
+            <h2>
+                Belum Dibaca
+            </h2>
+            <div class="book_list" id="unfinished-read">
+                <!--        <article class="book_item">-->
+                <!--        <h3>Book Title</h3>-->
+                <!--        <p>Penulis: John Doe</p>-->
+                <!--        <p>Tahun: 2002</p>-->
+                <!--    -->
+                <!--        <div class="action">-->
+                <!--          <button class="check-button">Selesai dibaca</button>-->
+                <!--          <button class="trash-button">Hapus buku</button>-->
+                <!--        </div>-->
+                <!--      </article>-->
+            </div>
+        </section>
+        <section class="book_shelf">
+            <h2>
+                Sudah Dibaca
+            </h2>
+            <div id="finished-read" class="book_list">
+                <!--      <article class="book_item">-->
+                <!--        <h3>Book Title</h3>-->
+                <!--        <p>Penulis: John Doe</p>-->
+                <!--        <p>Tahun: 2002</p>-->
+                <!--        -->
+                <!--        <div class="action">-->
+                <!--          <button class="refresh-button">Belum selesai di Baca</button>-->
+                <!--          <button class="trash-button">Hapus buku</button>-->
+                <!--        </div>-->
+                <!--      </article>-->
+            </div>
+        </section>
+
+        <footer> 
+        <p>&copy; Copyright 2022 <a href="https://github.com/Akmalfy" target="_blank">Akmal Firliyanto</p>
+        </footer>
+    </div>
+
+    
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

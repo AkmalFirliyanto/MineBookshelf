@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: grid;
+    margin: auto;
+    height: 600px;
+    grid-template-areas: "header header" "img main" "search search" "unfinish finish " "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr 1fr;
+}
+
+body {
+    color: #d3d3d3;
+    background-color: #F1EFDC;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    grid-area: header;
+    color: #F1EFDC;
+    background-color: #F98404;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+img {
+    grid-area: img;
+    margin-left: 4em;
+    margin-right: 6em;
+    margin-top: 3em;
+    height: 400px;
+}
+
+main {
+    grid-area: main;
+    margin-top: 3em;
+    width: 80%;
+}
+
+.search {
+    text-align: center;
+    margin: 10vh 32px;
+    padding: 0;
+    display: block;
+    grid-area: search;
+}
+
+.search input {
+    padding: 10px;
+    font-size: larger;
+    text-align: center;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #ce9c77;
+    width: 100%;
+}
+
+.input_section {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid #F98404;
+}
+
+.input_section>h2 {
+    text-align: center;
+    color: #F98404;
+}
+
+.input_section>form>.input-group {
+    margin: 8px 0;
+}
+
+.input_section>form>.book_submit {
+    background-color: #F98404;
+    color: #3b3b3b;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section>form>button>span {
+    font-weight: bold;
+}
+
+.input_section>form>.input-group>input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.input_section>form>.input-group>label {
+    color: #F98404;
+    font-weight: bold;
+}
+
+.input_section>form>.input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section>form>.input_inline>label {
+    color: #F98404;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.book_shelf {
+    margin: 16px;
+    border: 1px solid #F98404;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+#unfinished-read {
+    grid-area: unfinish;
+    color: #F98404;
+    text-align: center;
+}
+
+#finished-read {
+    grid-area: finish;
+    text-align: center;
+}
+
+.book_shelf>h2 {
+    color: #F98404;
+    text-align: center;
+}
+
+.book_shelf>.book_list {
+    padding: 16px;
+    color: #F98404;
+}
+
+.book_shelf>.book_list>.book_item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid #F98404;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.book_shelf>.book_list>.book_item>h3,
+p {
+    margin: 8px 0;
+}
+
+.book_shelf>.book_list>.book_item>.action>button>img{
+    width: 40px;
+    height: 40px;
+    right: 0;
+    padding: 10px;
+    margin: 0 5px 0 0;
+    color: #F98404;
+}
+
+.book_shelf>.book_list>.book_item>.action>.check-button{
+    cursor: pointer;
+}
+
+.book_shelf>.book_list>.book_item>.action>.refresh-button {
+     cursor: pointer;
+}
+
+.book_shelf>.book_list>.book_item>.action>.trash-button {
+     cursor: pointer;
+}
+
+footer {  
+    grid-area: footer;
+    text-align: center;
+    color: #ffffff;
+    background-color: #F98404;
+    padding: 7vh 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f5eee4;
+}
+
+footer a:hover,
+footer a:active {
+    text-decoration: none;
+    color: #035a54;
+}
